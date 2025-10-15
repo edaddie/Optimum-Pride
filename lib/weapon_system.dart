@@ -6,7 +6,7 @@ class WeaponSystem {
   int _power; // 0–100
 
   // Parameterized constructor
-  WeaponSystem({String name = 'Ion Blaster', int power = 90})
+  WeaponSystem({String name = 'Cannon Blaster Silonga', int power = 90})
       : _name = name,
         _power = power;
 
@@ -24,7 +24,7 @@ class WeaponSystem {
 
   // Methods
   void fire() {
-    print('[$_name] [WeaponSystem] Firing at full power ($_power%)!');
+    print('[$_name] [WeaponSystem] Firing at full power. Pew! Pew! Pew! ($_power%)!');
   }
 
   void reload() {

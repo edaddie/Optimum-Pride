@@ -21,9 +21,11 @@ void main() {
   );
 
   // Step 3: Demonstrate delegation (container methods)
-  print('--- Demo: engageBattleMode ---');
+  print('Optimum Pride: "AUTOBOTS, ROLL OUT!"');
+  print('Engaging Battle Mode...\n');
   transformer.engageBattleMode();
 
-  print('--- Demo: initiateTransformation ---');
+  print('Optimum Pride: "ROBOTS IN DISGUISE. Urrgh-Urrgh-Ah-Ah"');
+  print('Initiating Transformation...\n');
   transformer.initiateTransformation();
 }

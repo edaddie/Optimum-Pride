@@ -1,21 +1,56 @@
-<<<<<<< HEAD
-# transformer
+<!-- PROJECT HEADER -->
+<h1 align="center">🤖 Transformer Robot System</h1>
+<p align="center">
+  <b>A Composition & Encapsulation Demo in Dart</b><br>
+  <sub>Object-Oriented Programming — Group Task 5</sub>
+</p>
 
-A new Flutter project.
+<p align="center">
+  <!-- BADGES -->
+  <img src="https://img.shields.io/badge/language-Dart-blue.svg" alt="language badge">
+  <img src="https://img.shields.io/badge/project-OOP%20Composition-success.svg" alt="project badge">
+  <img src="https://img.shields.io/badge/status-Active-brightgreen.svg" alt="status badge">
+  <img src="https://img.shields.io/badge/version-1.0.0-informational.svg" alt="version badge">
+</p>
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🧠 Project Overview
+This project demonstrates *Object-Oriented Programming (OOP)* principles — specifically *Composition* and *Encapsulation* — through a themed Transformer Robot System.  
 
-A few resources to get you started if this is your first Flutter project:
+The main container class Transformer composes three subsystems:
+- WeaponSystem
+- ArmorSystem
+- EngineSystem
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Each subsystem is defined in its own Dart file and encapsulates its properties and behaviors.  
+The container class accepts these parts through *constructor injection* and delegates actions via its own methods.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# Optimum-Pride
-A small Robot-Themed program that shows composition: one container class has parts. Thea small program that shows composition: one container class and has 3 parts. The container accepts its parts via the constructor and delegates work to them in its methods. container accepts its parts via the constructor and delegates work to them in its methods.
->>>>>>> b27b78551971ba231f683266165fe098b0a06c32
+---
+
+## ⚙️ Description
+
+### 🔹 Container Class — Transformer
+- Demonstrates *composition* using constructor injection  
+- Delegates actions to its subsystems  
+- Contains two primary methods:
+  - engageBattleMode() — activates all subsystems for battle
+  - initiateTransformation() — performs the robot’s transformation sequence
+
+### 🔹 Part Classes
+Each part class uses *encapsulation* via private fields and getters/setters:
+- *WeaponSystem* — Handles firing and reloading  
+- *ArmorSystem* — Manages shield activation and repairs  
+- *EngineSystem* — Controls boosting and transformation  
+
+---
+
+## 🖥️ How to Run
+
+### Prerequisites
+- Install the latest [Dart SDK](https://dart.dev/get-dart)
+
+### Run Command
+From your project root:
+```bash
+dart run lib/main.dart

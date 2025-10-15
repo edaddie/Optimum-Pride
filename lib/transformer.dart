@@ -17,31 +17,31 @@ class Transformer {
 
   // Delegated action 1
   void engageBattleMode() {
-    print('[Transformer] Engaging BATTLE MODE...');
-    print('[Transformer] Delegating -> engineSystem.boost()');
+    print('Optimum Pride: Engaging BATTLE MODE...');
+    print('Optimum Pride: Delegating -> engineSystem.boost()');
     engineSystem.boost();
 
-    print('[Transformer] Delegating -> armorSystem.activateShield()');
+    print('Optimum Pride: Delegating -> armorSystem.activateShield()');
     armorSystem.activateShield();
 
-    print('[Transformer] Delegating -> weaponSystem.fire()');
+    print('Optimum Pride: Delegating -> weaponSystem.fire()');
     weaponSystem.fire();
 
-    print('[Transformer] Battle mode sequence complete.\n');
+    print('Optimum Pride: Battle mode sequence complete.\n');
   }
 
   // Delegated action 2
   void initiateTransformation() {
-    print('[Transformer] Initiating transformation sequence...');
-    print('[Transformer] Delegating -> engineSystem.transform()');
+    print('Optimum Pride: Initiating transformation sequence...');
+    print('Optimum Pride: Delegating -> engineSystem.transform()');
     engineSystem.transform();
 
-    print('[Transformer] Delegating -> weaponSystem.reload()');
+    print('Optimum Pride: Delegating -> weaponSystem.reload()');
     weaponSystem.reload();
 
-    print('[Transformer] Delegating -> armorSystem.repair()');
+    print('Optimum Pride: Delegating -> armorSystem.repair()');
     armorSystem.repair();
 
-    print('[Transformer] Transformation complete.\n');
+    print('Optimum Pride: Transformation complete.\n');
   }
 }
